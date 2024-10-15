@@ -8,7 +8,7 @@ const Footer = () => (
       <FaTwitter className="inline-block text-lg hover:text-indigo-400 transition" />
       <FaInstagram className="inline-block text-lg hover:text-indigo-400 transition" />
     </div>
-    <p className="m-4 flex flex-col md:flex-row justify-center items-center gap-4">
+    <p className="m-4 text-sm flex flex-col md:flex-row justify-center items-center gap-4">
       <span>© 2024 XYZ Company. All rights reserved.</span>
       <span className="md:visible hidden">|</span>
       <div className="flex gap-2 justify-center items-center">
