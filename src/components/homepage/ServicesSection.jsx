@@ -26,9 +26,9 @@ const ServicesSection = () => (
       {services.map((service, index) => (
         <motion.div
           key={index}
-          whileHover={{ scale: 1.05, rotateX: 10, rotateY: 10, rotateZ: 2 }} // Subtle tilt effect
+          whileHover={{ scale: 1.02, rotateX: 10, rotateY: 10, rotateZ: 1 }} // Subtle tilt effect
           transition={{ duration: 0.3 }} // Smooth transition
-          className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm transition-shadow hover:shadow-lg border-2 border-blue-400 flex flex-col items-center text-center"
+          className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm transition-shadow hover:shadow-lg border border-blue-50 dark:border-blue-900 flex flex-col items-center text-center"
         >
           <div className="text-8xl text-blue-600 dark:text-blue-400 mb-6 p-2">{service.icon}</div>
           <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">{service.title}</h3>

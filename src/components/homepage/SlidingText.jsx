@@ -34,7 +34,7 @@ const SlidingText = () => {
   };
 
   return (
-    <div className="flex items-center justify-center overflow-hidden bg-white dark:bg-gray-900 dark:text-white text-gray-900 py-10">
+    <div className="flex items-center justify-center overflow-hidden bg-white dark:bg-gray-900 dark:text-white text-gray-900 pt-6 pb-10">
       <div className="flex space-x-8">
         <motion.span
           key={currentWordIndex} // Use key to trigger re-mounting for animation
@@ -45,7 +45,7 @@ const SlidingText = () => {
             duration: 0.2, // Duration for fade in/out
             ease: 'easeInOut',
           }}
-          className="text-6xl lg:text-9xl font-extrabold whitespace-nowrap" // Prevent text wrapping
+          className="text-6xl lg:text-9xl whitespace-nowrap" // Prevent text wrapping
         >
           {punchWords[currentWordIndex]} {/* Display current word */}
         </motion.span>

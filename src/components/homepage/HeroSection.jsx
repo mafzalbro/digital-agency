@@ -89,7 +89,7 @@ const HeroSection = () => {
       <motion.img
         src="/hero.png"
         alt="Hero"
-        className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] w-full h-full object-cover opacity-10 dark:opacity-20 pointer-events-none"
+        className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] w-full h-full object-cover opacity-10 dark:opacity-10 pointer-events-none"
         style={imageStyle}
       />
     </div>
