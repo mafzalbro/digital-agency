@@ -60,7 +60,7 @@ const Navbar = () => {
     <nav
       className={`bg-gray-100 translate-y-0 dark:bg-gray-900 transition-transform duration-500 ease-in-out ${
         isSticky
-          ? " p-3 sticky top-0 z-50 shadow-md backdrop-blur-lg bg-blue-100 dark:bg-opacity-80 bg-opacity-80 translate-y-0"
+          ? " p-3 sticky top-0 z-50 shadow-md backdrop-blur-lg bg-blue-500 dark:bg-opacity-20 bg-opacity-20 translate-y-0"
           : " p-4 -translate-y-24"
       }`}
     >
@@ -80,8 +80,10 @@ const Navbar = () => {
           </Link>
         </motion.div>
         <motion.ul
-          initial={{ x: 100 }}
-          animate={{ x: 0 }}
+          initial={{ x: 100 }} // Start off-screen to the right
+          animate={{ x: 0 }} // Move to the original position
+          exit={{ x: 100 }} // Move back off-screen to the right
+          transition={{ duration: 0.5 }} // Duration of the animation
           className={`hidden md:flex space-x-6 text-gray-900 dark:text-gray-100`}
         >
           <li>
@@ -94,16 +96,22 @@ const Navbar = () => {
         <div className="flex items-center space-x-4">
           <button onClick={toggleDarkMode} className="focus:outline-none">
             {darkMode === "dark" ? (
-              <FaSun className="text-yellow-500" />
+              <FaSun className="text-yellow-500" size={20} />
             ) : (
-              <FaMoon className="text-blue-500" />
+              <FaMoon className="text-blue-500" size={20} />
             )}
           </button>
           <button className="md:hidden" onClick={toggleMenu}>
             {isOpen ? (
-              <IoCloseOutline className="text-gray-900 dark:text-gray-100" />
+              <IoCloseOutline
+                className="text-gray-900 dark:text-gray-100"
+                size={25}
+              />
             ) : (
-              <CiMenuFries className="text-gray-900 dark:text-gray-100" />
+              <CiMenuFries
+                size={20}
+                className="text-gray-900 dark:text-gray-100"
+              />
             )}
           </button>
         </div>

@@ -10,7 +10,7 @@ const CallToAction = () => (
       Contact Us
     </RoundedButton>    
     {/* Background image */}
-    <img src="/contact.png" alt="Contact" className="absolute top-0 right-0 w-full object-contain h-auto opacity-40" />
+    <img src="/contact.png" alt="Contact" className="absolute top-0 right-0 bottom-0 object-cover w-auto h-full opacity-40" />
   </div>
 );
 
