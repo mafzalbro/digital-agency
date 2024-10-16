@@ -42,7 +42,7 @@ const PDFSection = ({ file, numPages, onDocumentLoadSuccess }) => {
               renderAnnotationLayer={false}
               loading={<Skeleton height={800} />}
             />
-            <p className="text-right dark:text-gray-200 text-gray-500">
+            <p className="p-3 pb-0 text-right dark:text-gray-200 text-gray-500 text-sm">
               Page {index + 1}
             </p>
           </div>
