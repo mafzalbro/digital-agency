@@ -81,9 +81,7 @@ const VideoPage = () => {
       >
         {loading ? (
           // Loading spinner or skeleton
-          <div className="w-full h-64 flex justify-center items-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-gray-500"></div>
-          </div>
+          <div className="dark:text-white h-96 flex justify-center items-center">Loading...</div>
         ) : (
           <ReactPlayer
             ref={playerRef}

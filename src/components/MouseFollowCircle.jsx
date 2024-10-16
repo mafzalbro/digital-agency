@@ -32,7 +32,7 @@ const MouseFollowCircle = () => {
   // Styles for the moving circle
   const circleStyle = {
     position: "fixed",
-    zIndex: "1000",
+    zIndex: 2000,
     left: `${mousePos.x}px`,
     top: `${mousePos.y}px`,
     width: "10px",
